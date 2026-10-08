@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pacmac - Juego estilo Pac-Man</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="contenedor">
+    <h1>🟡 Pacmac</h1>
+
+    <div class="panel-info">
+      <span>Puntos: <strong id="puntuacion">0</strong></span>
+      <span>Vidas: <strong id="vidas">3</strong></span>
+      <span>Nivel: <strong id="nivel">1</strong></span>
+    </div>
+
+    <canvas id="juego" width="448" height="496"></canvas>
+
+    <p id="mensaje" class="mensaje">Usa las flechas del teclado para mover a Pacmac.</p>
+
+    <div class="controles">
+      <button id="btnReiniciar">Reiniciar</button>
+      <button id="btnPausa">Pausa</button>
+    </div>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
